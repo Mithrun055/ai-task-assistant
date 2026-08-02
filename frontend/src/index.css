@@ -1,1 +1,131 @@
 @import "tailwindcss";
+
+/* ==========================================================
+   GLOBAL STYLES
+========================================================== */
+
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #020617;
+    color: white;
+    font-family:
+        Inter,
+        "Segoe UI",
+        Roboto,
+        sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+
+/* ==========================================================
+   SELECTION
+========================================================== */
+
+::selection {
+    background: #06b6d4;
+    color: white;
+}
+
+/* ==========================================================
+   MARKDOWN
+========================================================== */
+
+.prose h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #22d3ee;
+}
+
+.prose h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    color: white;
+}
+
+.prose h3 {
+    margin-top: 1.5rem;
+    color: #67e8f9;
+}
+
+.prose p {
+    line-height: 1.8;
+}
+
+.prose ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.prose ol {
+    list-style: decimal;
+    padding-left: 1.5rem;
+}
+
+.prose li {
+    margin: .35rem 0;
+}
+
+.prose strong {
+    color: white;
+}
+
+.prose code {
+    background: #1e293b;
+    color: #22d3ee;
+    padding: .2rem .4rem;
+    border-radius: .3rem;
+}
+
+.prose pre {
+    background: #0f172a;
+    padding: 1rem;
+    border-radius: .8rem;
+    overflow-x: auto;
+}
+
+.prose table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.prose table th,
+.prose table td {
+    border: 1px solid #334155;
+    padding: .6rem;
+}
+
+.prose blockquote {
+    border-left: 4px solid #22d3ee;
+    padding-left: 1rem;
+    color: #cbd5e1;
+}

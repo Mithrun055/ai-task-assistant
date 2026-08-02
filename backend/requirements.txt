@@ -1,6 +1,7 @@
 fastapi
 uvicorn
-crewai
+crewai[litellm]
 crewai-tools
 python-dotenv
 pydantic
+litellm
