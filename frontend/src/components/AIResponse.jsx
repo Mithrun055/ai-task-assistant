@@ -33,7 +33,7 @@ function parseToCards(markdown) {
     }
 
     if (current) cards.push(current);
-    return cards.filter((c) => c.title || c.body.trim());
+    return cards.filter((c) => c.body.trim());
 }
 
 // ── Component ─────────────────────────────────────────────────────
